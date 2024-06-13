@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ув калеки</title>
+</head>
+<body>
+
+<header>
+    <h1>Сайт верстальщика</h1>
+    <img src="./images/balloon-heart.svg" alt="logo" width="50px">
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="content">
+        <h2>form</h2>
+        <form id="form-reg" action="">
+            <label for="login">Введите логин</label><br>
+            <input class="form-item" type="text" name="login" id="login" placeholder="Введите логин" required> <br>
+
+            <label for="password">Введите пароль</label><br>
+            <input class="form-item" type="password" name="password" id="password" placeholder="Введите пароль" required> <br>
+
+            <label for="email">Введите email</label><br>
+            <input class="form-item" type="email" name="email" id="email" required placeholder="Введите email"><br>
+
+            <label for="age">Введите возраст</label><br>
+            <input class="form-item" type="number" name="age" id="age" placeholder="Введите возраст" max="100" min="0" step="1"><br>
+
+            <input type="radio" name="gender" id="gender-f" value="female" checked>
+            <label for="gender-f">женский</label>
+            <input type="radio" name="gender" id="gender-m" value="male">
+            <label for="gender-m">мужской</label> <br>
+
+            <label for="city">Выберите город</label><br>
+            <select name="city" id="city">
+                <option disabled selected>Выберите город</option>
+                <option value="city1">Москва</option>
+                <option value="city2">Челябинск</option>
+                <option value="city3">Питер</option>
+            </select> <br>
+
+            <label for="about">О себе</label>
+            <textarea name="about" id="about" cols="30" rows="10"></textarea> <br>
+
+            <input type="checkbox" name="agreement" id="agreement" required>
+            <label for="agreement">Согласие с политикой конфиденциальности</label> <br>
+
+            <input class="form-button" type="submit" value="Зарегистрироваться"> <br>
+            <input class="form-button" type="reset">
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; Банникова К. А. 2024 г.</p>
+    <p>Вы также можете найти меня <a href="https://www.inueco.ru/studentu/elektronnaya_informaczionno_obrazovatelnaya_sreda/lichnyij_kabinet_obuchayushhegosya" target="_blank">здесь</a></p>
+</footer>
+
+</body>
+</html>
